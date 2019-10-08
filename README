@@ -1,0 +1,37 @@
+-10
+-51
+﻿
+
+GPIO22 – UP
+
+
+
+>> from gpiozero import Button
+>>> b1 = Button(22)
+>>> help(b1)
+
+>>> b1.is_pressed
+False
+>>> b1.is_pressed
+True
+>>> b1.is_pressed
+False
+>>> b1.is_pressed
+False
+>>> 
+
+
+    sleep(2);    
+    #buzzer.on()
+    #sleep(2)
+    #buzzer.off()
+    lcd.clear()
+    count = 1
+    total = len(wifilist)
+    for network in wifilist:
+        lcd.display_lcd_line1("ID: " + network)
+        lcd.display_lcd_line2("Count " + str(count) + '\\' + str(total))
+        sleep(3)
+        count = count + 1
+    lcd.clear()
+    lcd.display_lcd_line1("Done scanning")

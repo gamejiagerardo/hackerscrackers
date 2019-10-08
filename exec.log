@@ -1,0 +1,96 @@
+wlan1     Interface doesn't support scanning : Device or resource busy
+
+wlan1     Interface doesn't support scanning : Device or resource busy
+
+wlan1     Interface doesn't support scanning : Device or resource busy
+
+wlan1     Interface doesn't support scanning : Device or resource busy
+
+wlan1     Interface doesn't support scanning : Device or resource busy
+
+HC Program is starting ... 
+max - dbLevel = -62.0
+max - min = -65.0
+level = 9.53846153846
+max - dbLevel = -56.0
+max - min = -65.0
+level = 8.61538461538
+max - dbLevel = -62.0
+max - min = -65.0
+level = 9.53846153846
+max - dbLevel = -60.0
+max - min = -65.0
+level = 9.23076923077
+max - dbLevel = -50.0
+max - min = -65.0
+level = 7.69230769231
+max - dbLevel = -50.0
+max - min = -65.0
+level = 7.69230769231
+max - dbLevel = -36.0
+max - min = -65.0
+level = 5.53846153846
+max - dbLevel = -4.0
+max - min = -65.0
+level = 0.615384615385
+max - dbLevel = -38.0
+max - min = -65.0
+level = 5.84615384615
+max - dbLevel = -34.0
+max - min = -65.0
+level = 5.23076923077
+max - dbLevel = -4.0
+max - min = -65.0
+level = 0.615384615385
+max - dbLevel = -20.0
+max - min = -65.0
+level = 3.07692307692
+max - dbLevel = -36.0
+max - min = -65.0
+level = 5.53846153846
+max - dbLevel = -26.0
+max - min = -65.0
+level = 4.0
+max - dbLevel = -36.0
+max - min = -65.0
+level = 5.53846153846
+max - dbLevel = -50.0
+max - min = -65.0
+level = 7.69230769231
+max - dbLevel = -54.0
+max - min = -65.0
+level = 8.30769230769
+max - dbLevel = -46.0
+max - min = -65.0
+level = 7.07692307692
+max - dbLevel = -42.0
+max - min = -65.0
+level = 6.46153846154
+max - dbLevel = -52.0
+max - min = -65.0
+level = 8.0
+max - dbLevel = -60.0
+max - min = -65.0
+level = 9.23076923077
+max - dbLevel = -60.0
+max - min = -65.0
+level = 9.23076923077
+max - dbLevel = -62.0
+max - min = -65.0
+level = 9.53846153846
+Traceback (most recent call last):
+  File "/home/pi/hcmain.py", line 121, in <module>
+    lcd.display_lcd_line1("Out of Range")
+  File "/home/pi/modules/hclcd.py", line 60, in display_lcd_line1
+    lcd.setCursor(0,0)  # set cursor position
+  File "/home/pi/modules/Adafruit_LCD1602.py", line 100, in setCursor
+    self.write4bits(self.LCD_SETDDRAMADDR | (col + self.row_offsets[row]))
+  File "/home/pi/modules/Adafruit_LCD1602.py", line 164, in write4bits
+    self.GPIO.output(self.pin_rs, char_mode)
+  File "/home/pi/modules/PCF8574.py", line 67, in output
+    self.chip.digitalWrite(pin,value)
+  File "/home/pi/modules/PCF8574.py", line 38, in digitalWrite
+    self.writeByte(value)	
+  File "/home/pi/modules/PCF8574.py", line 26, in writeByte
+    self.bus.write_byte(self.address,value)
+KeyboardInterrupt
